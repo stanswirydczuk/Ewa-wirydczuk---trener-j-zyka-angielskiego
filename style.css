@@ -1,0 +1,474 @@
+
+@font-face {
+    font-family: "galaxieitalic";
+    src: url("fonts/Copernicus-BookItalic.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: "galaxiesemiitalic";
+    src: url("fonts/Copernicus-SemiboldItalic.woff") format('woff');
+}
+
+@font-face {
+    font-family: "elena";
+    src: url("fonts/ElenaWebBasicRegular.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: "flama";
+    src: url("fonts/FlamaCondensed-Book.woff") format('woff');
+}
+
+@font-face {
+    font-family: "flamalight";
+    src: url("fonts/FlamaCondensed-Light.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: "flamamedium";
+    src: url("fonts/FlamaCondensed-Medium.woff") format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+/* Impact */
+  text-rendering: optimizeLegibility;
+  font-family: elena;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 5px rgba(84, 84, 84, 0.1);
+
+}
+
+.empty {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: flamamedium;
+  font-weight: 1000;
+  text-decoration: none;
+}
+
+.nav__links a {
+  font-size: 22px;
+  color: #35508C;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #4A70C4;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: #2C4274;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  color: #FFFFFF;
+}
+
+.cta:hover {
+  background-color: #35508C;
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+  color: #35508C;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #4A70C4;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+
+
+.menu {
+    display: initial;
+  }
+}
+
+/* kontakt.html */
+
+.kontaktheader {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.name,
+.enteremail,
+.message,
+.submit {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.name,
+.enteremail,
+.message {
+ width: 100%;
+ border: 1px solid #ccc;
+ background: #FFF;
+ margin: 0 0 5px;
+ padding: 10px;
+}
+
+.name:hover,
+.enteremail:hover,
+.message:hover {
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+.name:focus,
+.enteremail:focus,
+.message:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+.form {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.formheader {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.formparagraph {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.message {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+.submit {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #FABAC6;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.submit:hover {
+  background: #E6ABB6;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#fb {
+  font-size: 30px;
+  margin-right:10px;
+  color:#35508C;
+  transition: color 0.3s ease 0s;
+}
+
+#ig {
+  font-size: 30px;
+  color:#35508C;
+  transition: color 0.3s ease 0s;
+}
+
+#fb:hover {
+  color:#4A70C4;
+}
+
+#ig:hover {
+  color:#4A70C4;
+}
+
+  /* positioning */
+
+.formandimage {
+ margin: 50px;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-evenly;
+ align-items: space-between;
+ padding: 0px 15%;
+}
+
+.container {
+  min-width: 400px;
+  max-width: 400px;
+  width: 100%;
+  /* margin: 0 auto; */
+  position: relative;
+}
+
+.flexdiv {
+  width:400px;
+  height: 450px;
+  background-color: pink;
+  /* margin: 0 auto; */
+}
+
+#kontaktimg {
+margin-top: 75px;
+width: auto;
+height: 400px;
+}
+
+/* map */
+
+.map{
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
+}
+
+.copyrightkontakt {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.copyrightoferta {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  margin-top: 220px;
+}
+
+/* oferta.html */
+
+.oferta {
+  background-color: #FCD4DC;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 10%;
+}
+
+.oferta h1, .oferta h2, .oferta h3 {
+  font-size: 30px;
+}
+
+.oferta p {
+  font-size: 20px;
+}
+
+.div1, .div2, .div3 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  color: #35508C;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+#indywidualne, #konwersacje, #grupa {
+  font-size: 100px;
+  color: #35508C;
+  margin-bottom: 10px;
+}
+
+.ofertap1 {
+  color: #35508C;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.ofertap2 {
+  color: #35508C;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.ofertamain {
+
+margin-top: 100px;
+
+}
+
+.ofertamain h1,
+.ofertamain h2,
+.ofertamain h3 {
+  text-align: center;
+}
+
+
+/* omnie/index.html */
+
+.omniemain {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 860px;
+  height: 1100px;
+  color: #35508C;
+}
+
+.main2 {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.imgdiv1 {
+
+  display: flex;
+  min-width: 330px;
+  max-width: 330px;
+  height: 500px;
+  background-color: pink;
+}
+
+.imgdiv2 {
+
+  display: flex;
+  min-width: 330px;
+  max-width: 330px;
+  height: 500px;
+  background-color: pink;
+}
+
+.omniep1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  min-width: 330px;
+  max-width: 330px;
+  height: 500px;
+}
+
+.omniep2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  min-width: 330px;
+  max-width: 330px;
+  height: 500px;
+}
+
+.copyrightomnie {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
