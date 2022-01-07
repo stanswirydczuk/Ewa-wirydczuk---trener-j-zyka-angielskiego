@@ -42,6 +42,10 @@
 }
 
 header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,7 +185,7 @@ header {
 .kontaktheader {
   font-size: 35px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 .name,
@@ -318,9 +322,17 @@ fieldset {
 }
 
 #kontaktimg {
-margin-top: 75px;
-width: auto;
-height: 400px;
+margin-top: 210px;
+min-width: 400px;
+min-height: auto;
+max-width: 400px;
+max-height: auto;
+
+}
+
+#kontaktimgcontainer {
+  width: 400px;
+  height: 400px;
 }
 
 /* map */
@@ -382,7 +394,7 @@ height: 400px;
   color: #35508C;
     font-size: 35px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 140px;
     margin-bottom:50px;
 }
 
@@ -420,7 +432,7 @@ margin-top: 100px;
 }
 
 .main2 {
-  margin-top: 20px;
+  margin-top: 130px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -471,4 +483,7 @@ margin-top: 100px;
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+#pdf {
 }
