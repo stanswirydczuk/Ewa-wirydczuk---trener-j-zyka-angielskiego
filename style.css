@@ -1,4 +1,10 @@
 
+@media only screen and (max-width: 800px) {
+  #socialmedia {
+    display: none;
+  }
+}
+
 @font-face {
     font-family: "galaxieitalic";
     src: url("fonts/Copernicus-BookItalic.woff") format('woff');
@@ -44,7 +50,7 @@
 header {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 500;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -66,6 +72,7 @@ header {
 .nav__links a,
 .cta,
 .overlay__content a {
+  z-index: 1001;
   font-family: flamamedium;
   font-weight: 1000;
   text-decoration: none;
@@ -94,6 +101,7 @@ header {
 }
 
 .cta {
+  z-index: 1001;
   padding: 9px 25px;
   background-color: #2C4274;
   border: none;
@@ -117,7 +125,7 @@ header {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1001;
   left: 0;
   top: 0;
   background-color: #FFFFFF;
@@ -301,9 +309,9 @@ fieldset {
  margin: 50px;
  display: flex;
  flex-flow: row wrap;
- justify-content: space-evenly;
- align-items: space-between;
- padding: 0px 15%;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 23%;
 }
 
 .container {
@@ -322,7 +330,8 @@ fieldset {
 }
 
 #kontaktimg {
-margin-top: 210px;
+margin-top: 100px;
+
 min-width: 400px;
 min-height: auto;
 max-width: 400px;
@@ -483,7 +492,4 @@ margin-top: 100px;
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
-}
-
-#pdf {
 }
