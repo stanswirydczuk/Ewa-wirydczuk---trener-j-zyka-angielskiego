@@ -4,7 +4,13 @@
     display: none;
   }
 }
+@media only screen and (min-width: 200px) and (max-width: 768px) {
 
+.imgdiv1 .imgdiv2{
+max-width: 300px !important;
+}
+
+}
 @font-face {
     font-family: "galaxieitalic";
     src: url("fonts/Copernicus-BookItalic.woff") format('woff');
@@ -40,6 +46,11 @@
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
 /* Impact */
@@ -226,6 +237,8 @@ fieldset {
 .message:hover {
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
+  -webkit-transition: border-color 0.3s ease-in-out;
+-moz-transition: border-color 0.3s ease-in-out;
 }
 
 .name:focus,
@@ -276,10 +289,28 @@ fieldset {
 .submit:hover {
   background: #E6ABB6;
   transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+ -moz-transition: background 0.3s ease-in-out;
 }
 
 .submit:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
 }
 
 #fb {
@@ -463,21 +494,17 @@ margin-top: 100px;
 
 
 .imgdiv1 {
-
   display: flex;
   min-width: 330px;
   max-width: 330px;
   height: 500px;
-  background-color: pink;
 }
 
 .imgdiv2 {
-
   display: flex;
   min-width: 330px;
   max-width: 330px;
   height: 500px;
-  background-color: pink;
 }
 
 .omniep1 {
