@@ -102,6 +102,8 @@ header {
   display: flex;
 }
 
+
+
 .nav__links li {
   padding: 0px 20px;
 }
@@ -159,6 +161,12 @@ header {
   justify-content: center;
 }
 
+.socialsicons {
+  display: flex;
+  /* height: 100%; */
+  flex-direction: row;
+}
+
 .overlay a {
   padding: 15px;
   font-size: 36px;
@@ -208,6 +216,7 @@ header {
   font-size: 35px;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .name,
@@ -365,7 +374,6 @@ fieldset {
 
 #kontaktimg {
 margin-top: 100px;
-
 min-width: 400px;
 min-height: auto;
 max-width: 400px;
@@ -381,7 +389,7 @@ max-height: auto;
 /* map */
 
 .map{
-  /* margin-top: 10px; */
+  margin-top: 70px;
   margin-bottom: 20px;
 }
 
@@ -482,7 +490,7 @@ max-height: auto;
 
 .ofertamain {
 
-margin-top: 100px;
+margin-top: 200px;
 
 }
 
@@ -568,12 +576,12 @@ margin-top: 100px;
 } */
 
 .ofertabody {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/kindle.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/kindle.jpg");
 }
 
 @media all and (max-width: 499px) {
     .ofertabody {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/books.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/books.jpg");
     }
 }
 
