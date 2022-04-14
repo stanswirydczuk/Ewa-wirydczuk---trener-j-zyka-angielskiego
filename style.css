@@ -516,7 +516,7 @@ margin-top: 100px;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  min-width: 330px;
+  /* min-width: 330px; */
   max-width: 330px;
   height: 500px;
 }
@@ -526,7 +526,7 @@ margin-top: 100px;
   justify-content: center;
   align-items: center;
   font-size: 28px;
-  min-width: 330px;
+  /* min-width: 330px; */
   max-width: 330px;
   height: 500px;
 }
@@ -556,5 +556,18 @@ margin-top: 100px;
 @media all and (max-width: 499px) {
     .ofertabody {
         background-image: url("images/books.jpg")
+    }
+}
+
+@media all and (max-width: 499px) {
+  .omniemain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 1100px;
+    color: #35508C;
+  }
     }
 }
