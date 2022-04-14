@@ -497,14 +497,14 @@ margin-top: 100px;
 }
 
 
-.imgdiv1 {
+.img1 {
   display: flex;
   /* min-width: 330px; */
   max-width: 330px;
   height: 500px;
 }
 
-.imgdiv2 {
+.img2 {
   display: flex;
   /* min-width: 330px; */
   max-width: 330px;
