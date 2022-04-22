@@ -61,6 +61,10 @@ max-width: 300px !important;
   font: 400 12px/35px "Roboto", Helvetica, Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -69,7 +73,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%;
+  padding: 0px 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #FFFFFF;
   box-shadow: 0px 5px 5px rgba(84, 84, 84, 0.1);
 
@@ -115,7 +121,7 @@ header {
 .nav__links li a:hover {
   color: #4A70C4;
 }
-
+/*
 .cta {
   z-index: 1001;
   padding: 9px 25px;
@@ -131,11 +137,41 @@ header {
   background-color: #35508C;
 }
 
-/* Mobile Nav */
+
 
 .menu {
   display: none;
 }
+*/
+
+#bars {
+  font-size: 30px;
+  color:#35508C;
+  transition: color 0.3s ease 0s;
+  color: #2C4274;
+  transition: color 0.3s ease 0s;
+}
+
+#bars:hover {
+  color: #35508C;
+}
+
+.cta {
+   z-index: 1001;
+   padding: 9px 25px;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   color: #FFFFFF;
+ }
+
+
+
+ /* Mobile Nav */
+
+ .menu {
+   display: none;
+ }
 
 .overlay {
   height: 100%;
@@ -346,6 +382,7 @@ fieldset {
   color:#4A70C4;
 }
 
+
   /* positioning */
 
 .formandimage {
@@ -393,39 +430,35 @@ max-height: auto;
   margin-bottom: 20px;
 }
 
+.copyrightomnie {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  color: #35508C;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 .copyrightkontakt {
   text-align: center;
-  padding-bottom: 20px;
   color: #35508C;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .copyrightoferta {
   text-align: center;
-  margin-top: 200px;
-  padding-bottom: 20px;
+  margin-top: 100px;
   color: white;
-}
-
-.copyrightoferta a{
-  color: white;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .copyrightpolityka {
   text-align: center;
   margin-top: 200px;
-  padding-bottom: 20px;
-}
-
-.copyrightkontakt a{
-  color: #35508C;
-}
-
-.copyrightpolityka a{
-  color: #35508C;
-}
-
-.copyrightomnie a{
-  color: #35508C;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .copyrightthx {
@@ -435,6 +468,60 @@ max-height: auto;
   padding-bottom: 20px;
   position: relative;
   margin-top: 220px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.copyrightthx a, .copyrightthx2 a{
+  color: #35508C;
+}
+
+.copyrightkontakt a, .copyrightkontakt2 a{
+  color: #35508C;
+}
+
+.copyrightpolityka a, .copyrightpolityka2 a{
+  color: #35508C;
+}
+
+.copyrightomnie a, .copyrightomnie2 a {
+  color: #35508C;
+}
+
+.copyrightoferta a, .copyrightoferta2 a{
+  color: white;
+}
+
+.copyrightomnie2 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #35508C;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.copyrightkontakt2 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #35508C;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.copyrightoferta2 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.copyrightpolityka2 {
+  text-align: center;
+  margin-top: 200px;
+  padding-bottom: 20px;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 /* oferta.html */
 
@@ -491,7 +578,8 @@ max-height: auto;
 .ofertamain {
 
 margin-top: 200px;
-
+margin-left: 5vw;
+margin-right: 5vw;
 }
 
 .ofertamain h1,
@@ -511,6 +599,10 @@ margin-top: 200px;
   width: 860px;
   height: 1100px;
   color: #35508C;
+}
+
+.omniemain:second-child {
+
 }
 
 .main2 {
@@ -539,14 +631,20 @@ margin-top: 200px;
 .omniep1 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  flex-direction: column;
   font-size: 30px;
   /* min-width: 330px; */
   max-width: 330px;
   height: 500px;
 }
 
+.omniep12 {
+
+}
+
 .omniep2 {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,15 +653,6 @@ margin-top: 200px;
   max-width: 330px;
   height: 500px;
 }
-
-.copyrightomnie {
-  position: relative;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: #35508C;
-}
-
 
 /*
 .ofertabody2 {
